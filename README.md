@@ -17,42 +17,46 @@ Set up your paths to your apps and test suites, custom IDs etc. See the below co
 
 ### Espresso and XCUITest
 ```java
+ // Set one to true and one to false depending on the type of upload
+ private val doFileUpload = true
+ private val doUrlUpload = false
+        
+ companion object {
     // path to JSON file (does not need to be updated)
-    private static String jsonFilePath = "src/test/resources/app/<espresso or xcuitest>.json";
-
-    // Provide unique custom IDs (if IDs exist, it will use the existing app on the server)
-    private static String appCustomID = "<put your app custom id here>";
-    private static String testSuiteCustomID = "<put your test suite custom id here>";
-
+    private const val jsonFilePath = "src/test/resources/app/espresso.json"
+  
+    // Provide unique custom IDs (if IDs exist, it will use the
+    private const val appCustomID = "MyAppCustomID"
+    private const val testSuiteCustomID = "MyTestSuiteCustomID"
+  
     // Provide the URLs of your app and tests files if doing upload by URL
-    private static String appFileURL = "<app file url goes here>";
-    private static String testSuiteURL = "<test suite file url goes here>";
-
+    private const val appFileURL = "https://www.browserstack.com/app-automate/sample-apps/android/Calculator.apk"
+    private const val testSuiteURL = "https://www.browserstack.com/app-automate/sample-apps/android/CalculatorTest.apk"
+  
     // Set the path to the files on your machine
-    private static File appFile = new File("<path to app file on your machine goes here>");
-    private static File testSuiteFile = new File("<path to test suite file on your machine goes here>");
-
-    // Set one to true and one to false depending on the type of upload
-    private boolean doFileUpload = false;
-    private boolean doUrlUpload = false;
+    private val appFile = File("/path/to/app-filename")
+    private val testSuiteFile = File("/path/to/test-suite-filename")
+ }
 ```
 
 (This code is present at the top of [EspressoTest.java](./src/test/java/com/test/EspressoTest.java) and [XCUITest.java](./src/test/java/com/test/XCUITest.java))
 
 ### Appium
 ```java
+// Set one to true and one to false depending on the type of upload
+private val doFileUpload = true
+private val doUrlUpload = false
+        
+companion object {
     // Provide unique custom IDs (if IDs exist, it will use the
-    private static String appCustomID = "TheCalculatorAppAndroid";
-
+    private const val appCustomID = "AppiumCustomID"
+  
     // Provide the URLs of your app and tests files if doing upload by URL
-    private static String appFileURL = "https://www.browserstack.com/app-automate/sample-apps/android/Calculator.apk";
-
+    private const val appFileURL = "https://www.browserstack.com/app-automate/sample-apps/android/Calculator.apk"
+  
     // Set the path to the files on your machine
-    private static File appFile = new File("/Users/garybehan/Downloads/Calculator.apk");
-
-    // Set one to true and one to false depending on the type of upload
-    private boolean doFileUpload = true;
-    private boolean doUrlUpload = false;
+    private val appFile = File("/path/to/apk-filename.apk")
+}
 ```
 
 (This code is present at the top of [AppiumTest.java](./src/test/java/com/test/AppiumtTest.java))

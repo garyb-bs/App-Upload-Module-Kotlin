@@ -22,12 +22,12 @@ class AppiumTest {
 
     companion object {
         // Provide unique custom IDs (if IDs exist, it will use the
-        private const val appCustomID = "AndroidCustomIDTest-20-02-2023"
+        private const val appCustomID = "AppiumCustomID"
 
         // Provide the URLs of your app and tests files if doing upload by URL
         private const val appFileURL = "https://www.browserstack.com/app-automate/sample-apps/android/Calculator.apk"
 
         // Set the path to the files on your machine
-        private val appFile = File("/Users/garybehan/Downloads/app-debug.apk")
+        private val appFile = File("/path/to/apk-filename.apk")
     }
 }

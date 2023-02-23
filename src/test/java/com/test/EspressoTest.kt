@@ -45,15 +45,15 @@ class EspressoTest {
         private const val jsonFilePath = "src/test/resources/app/espresso.json"
 
         // Provide unique custom IDs (if IDs exist, it will use the
-        private const val appCustomID = "MyCalculatorApp40"
-        private const val testSuiteCustomID = "MyCalculatorAppTests40"
+        private const val appCustomID = "MyCustomAppID"
+        private const val testSuiteCustomID = "MyCustomTestID"
 
         // Provide the URLs of your app and tests files if doing upload by URL
         private const val appFileURL = "https://www.browserstack.com/app-automate/sample-apps/android/Calculator.apk"
         private const val testSuiteURL = "https://www.browserstack.com/app-automate/sample-apps/android/CalculatorTest.apk"
 
         // Set the path to the files on your machine
-        private val appFile = File("/Users/garybehan/Downloads/app-debug.apk")
-        private val testSuiteFile = File("/Users/garybehan/Downloads/CalculatorTest.apk")
+        private val appFile = File("/path/to/apk-filename.apk")
+        private val testSuiteFile = File("/path/to/apk-test-filename.apk")
     }
 }

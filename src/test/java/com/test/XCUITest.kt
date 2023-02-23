@@ -45,15 +45,15 @@ class XCUITest {
         private const val jsonFilePath = "src/test/resources/app/xcuitest.json"
 
         // Provide unique custom IDs (if IDs exist, it will use the
-        private const val appCustomID = "SampleAppModuleFile56"
-        private const val testSuiteCustomID = "SampleTestSuiteModuleFile56"
+        private const val appCustomID = "XCUIAppCustomID"
+        private const val testSuiteCustomID = "XCUITestSuiteCustomID"
 
         // Provide the URLs of your app and tests files if doing upload by URL
         private const val appFileURL = "https://www.browserstack.com/app-automate/sample-apps/ios/BrowserStack-SampleApp.ipa"
         private const val testSuiteURL = "https://www.browserstack.com/app-automate/sample-apps/ios/BrowserStack-SampleXCUITest.zip"
 
         // Set the path to the files on your machine
-        private val appFile = File("/Users/garybehan/Downloads/BrowserStack-SampleApp.ipa")
-        private val testSuiteFile = File("/Users/garybehan/Downloads/BrowserStack-SampleXCUITest.zip")
+        private val appFile = File("/path/to/ipa-filename.ipa")
+        private val testSuiteFile = File("/path/to/test-suite-zip.zip")
     }
 }
