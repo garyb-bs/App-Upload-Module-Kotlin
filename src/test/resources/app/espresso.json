@@ -1,1 +1,1 @@
-{"app":"MyCalculatorApp40","buildName":"IS THIS WORKING","devices":["Samsung Galaxy S20-10.0","Google Pixel 3-9.0"],"testSuite":"MyCalculatorAppTests40","project":"BrowserStack Demo TestNG","deviceLogs":true,"networkLogs":true}
+{"app":"MyCustomAppID-23-02-2023-14-01","buildName":"IS THIS WORKING","devices":["Samsung Galaxy S20-10.0","Google Pixel 3-9.0"],"testSuite":"MyCustomTestID-23-02-2023-14-01","project":"BrowserStack Demo TestNG","deviceLogs":true,"networkLogs":true}
